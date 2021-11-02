@@ -1,0 +1,33 @@
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <nav class=" menu col">
+        <ul class='list-inline'>
+          <li class='list-inline-item'><a href='#'>About</a></li>
+          <li class='list-inline-item'><a href='#'>Portfolio</a></li>
+          <li class='list-inline-item'><a href='#'>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="name col">
+        Jesse Slomowitz
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main portfolio">
+  <h2 class='title'>What I Do</h2>
+  <p class='intro'>My name is Jesse Benjamin Slomowitz. I am 26 years old, from South Florida now in Cincinnati, and in the past year I have become a full-stack developer through Codecademy.</p>
+  <button type='button' class='contact-button' >Get a Great Website</button>
+</div>
+<div class='card-cols'>
+  <% @project.each do |p| %>
+    <div class="card" style="width: 18rem;">
+      <%= image_tag p.imageLink, alt: p.alt, :class => "card-img-top"%>
+      <div class="card-body">
+        <h5 class="card-title"><%= p.cardTitle %></h5>
+        <p class="card-text"><%= p.cardText %></p>
+        <%= link_to p.cardTitle, p.url, :class => "btn btn-primary", target: '_blank' %>
+      </div>
+    </div>
+  <% end %>
+</div>

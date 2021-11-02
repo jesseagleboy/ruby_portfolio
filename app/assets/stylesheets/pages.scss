@@ -1,0 +1,36 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2531&q=80');
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    min-height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.title,
+.intro {
+    color: white;
+}
+
+.intro {
+    width: 50%;
+}
+
+.contact-button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    border: 0.5px black solid;
+}
+
+.card-cols {
+    display: flex;
+    flex-direction: row;
+}
