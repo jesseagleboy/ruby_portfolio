@@ -33,4 +33,19 @@
 .card-cols {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 18rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-cols {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
 }

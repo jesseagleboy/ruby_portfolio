@@ -21,7 +21,7 @@
 </div>
 <div class='card-cols'>
   <% @project.each do |p| %>
-    <div class="card" style="width: 18rem;">
+    <div class="card">
       <%= image_tag p.imageLink, alt: p.alt, :class => "card-img-top"%>
       <div class="card-body">
         <h5 class="card-title"><%= p.cardTitle %></h5>
