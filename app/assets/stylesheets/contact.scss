@@ -1,3 +1,24 @@
-// Place all the styles related to the Contact controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+    // Place all the styles related to the Contact controller here.
+    // They will automatically be included in application.css.
+    // You can use Sass (SCSS) here: https://sass-lang.com/
+    .contactTitle,
+    .contactIntro {
+        color: white
+    }
+    
+    .contactIntro {
+        width: 50%;
+    }
+    
+    .contact-div {
+        display: flex;
+        height: 20%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 2px black solid;
+    }
+    
+    .contact-div img {
+        height: 7.14rem;
+    }
