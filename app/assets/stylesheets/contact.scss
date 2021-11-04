@@ -12,13 +12,18 @@
     
     .contact-div {
         display: flex;
-        height: 20%;
+        margin-top: 2%;
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
-        border: 2px black solid;
     }
     
     .contact-div img {
         height: 7.14rem;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .contact-div img {
+            height: 3.57rem;
+        }
     }
