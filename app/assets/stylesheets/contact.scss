@@ -19,11 +19,12 @@
     }
     
     .contact-div img {
-        height: 7.14rem;
+        height: 150px;
+        flex-shrink: 2;
     }
     
     @media only screen and (max-width: 600px) {
         .contact-div img {
-            height: 3.57rem;
+            height: 100px;
         }
     }
